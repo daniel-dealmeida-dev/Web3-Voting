@@ -103,6 +103,6 @@ Daniel de Almeida
 
 Estudante e desenvolvedor em busca de oportunidades de estágio/júnior
 
-GitHub: https://github.com
+GitHub:[ https://github.com](https://github.com/daniel-dealmeida-dev)
 
 LinkedIn: [https://www.linkedin](https://www.linkedin.com/in/daniel-de-almeida-dev/)
