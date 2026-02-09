@@ -51,7 +51,7 @@ O sistema permite:
    - Somente `owner` pode criar novas votações.
 
 ---
-Prints
+### 🖼️ Prints
 
 
 Print 1:
