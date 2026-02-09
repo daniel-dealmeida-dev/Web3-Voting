@@ -35,7 +35,6 @@ O sistema permite:
 
 1. **Conectar carteira MetaMask**  
    - Autenticação via wagmi.  
-   - Controle de estado de conexão (`pending`, `connected`, `error`).  
 
 2. **Votação em tempo real**  
    - Dois candidatos com botão de votação.  
