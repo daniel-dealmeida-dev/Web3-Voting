@@ -51,7 +51,23 @@ O sistema permite:
    - Somente `owner` pode criar novas votações.
 
 ---
+Prints
 
+
+Print 1:
+<img width="1522" height="946" alt="image" src="https://github.com/user-attachments/assets/5a838a5d-517c-4d1f-98f1-c1141742a546" />
+
+---
+
+Print 2:
+<img width="1520" height="952" alt="image" src="https://github.com/user-attachments/assets/e84e1d6e-2b99-48cc-873f-9d26dea3d3bc" />
+
+---
+
+Print 3:
+<img width="1521" height="960" alt="image" src="https://github.com/user-attachments/assets/3b32e911-c64d-4b98-82aa-0ee3ee8126ce" />
+
+---
 ## 🏛 Arquitetura
 
 ```text
@@ -113,23 +129,6 @@ Melhor UX: loading spinners enquanto transações são confirmadas.
 
 Deploy automático usando Hardhat ou Foundry.
 
-Prints
-
-
-Print 1:
-<img width="1522" height="946" alt="image" src="https://github.com/user-attachments/assets/5a838a5d-517c-4d1f-98f1-c1141742a546" />
-
--------
-
-Print 2:
-<img width="1520" height="952" alt="image" src="https://github.com/user-attachments/assets/e84e1d6e-2b99-48cc-873f-9d26dea3d3bc" />
-
--------
-
-Print 3:
-<img width="1521" height="960" alt="image" src="https://github.com/user-attachments/assets/3b32e911-c64d-4b98-82aa-0ee3ee8126ce" />
-
--------
 
 
 📝 Licença
