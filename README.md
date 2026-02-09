@@ -52,37 +52,57 @@ O sistema permite:
 
 ---
 
-## 🚀 Como rodar o projeto
+## 🏛 Arquitetura
 
-### 1️⃣ Clonar o repositório
+```text
+[Usuário] --> [Frontend React/TS] --> [wagmi / MetaMask] --> [Contrato Solidity na Blockchain]
+O usuário interage com a interface (clicando em votar, conectando a carteira).
 
-```bash
+O frontend envia transações via wagmi para o contrato.
+
+O contrato Solidity valida votos, atualiza contadores e mantém a integridade na blockchain.
+
+Hooks do React (useEffect, useState) e funções de readContract/writeContract garantem que a interface reflita o estado real da blockchain em tempo real.
+
+🔧 Desafios Técnicos
+Garantir que o frontend refletisse imediatamente o voto na blockchain.
+
+Solução: utilizei useWaitForTransactionReceipt do wagmi para disparar um re-fetch dos dados assim que a transação foi confirmada.
+
+Lidando com deadline de votação no frontend e backend, evitando que votos atrasados fossem contabilizados.
+
+Integrar corretamente a MetaMask com múltiplos estados de conexão (pending, connected, error).
+
+🚀 Como rodar o projeto
+✅ Requisitos
+Node.js (>=18)
+
+MetaMask instalada
+
+1️⃣ Clonar o repositório
 git clone https://github.com/seuusuario/web3-voting.git
 cd web3-voting
 2️⃣ Instalar dependências do frontend
-cd src
 npm install
 3️⃣ Rodar o frontend
 npm run dev
-O frontend vai abrir no http://localhost:5173 (ou porta indicada pelo Vite).
-
 4️⃣ Deploy do contrato Solidity
 Abra contracts/Web.sol no Remix.
 
 Compile com Solidity 0.8.21.
 
-Faça deploy na testnet (Goerli/Sepholia) ou na blockchain local.
+Faça deploy na testnet (Goerli/Sepholia) ou blockchain local.
 
 Atualize CONTRACT_ADDRESS em src/vote.tsx com o endereço do deploy.
 
 🔗 Conexão com Web3
 wagmi é usado para conectar a carteira e enviar transações.
 
-readContract → ler estado atual do contrato (votos, candidatos).
+readContract -> ler estado atual do contrato (votos, candidatos).
 
-writeContract → enviar transações de voto.
+writeContract -> enviar transações de voto.
 
-ABI.json → interface do contrato Solidity usada pelo frontend.
+ABI.json -> interface do contrato Solidity usada pelo frontend.
 
 📈 Melhorias futuras
 Adicionar eventos Solidity (VoteCast) para atualizar frontend em tempo real.
