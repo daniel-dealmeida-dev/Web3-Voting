@@ -110,7 +110,7 @@ Abra contracts/Web.sol no Remix.
 
 Compile com Solidity 0.8.21.
 
-Faça deploy na testnet (Goerli/Sepholia) ou blockchain local.
+Faça deploy na blockchain local.
 
 Atualize CONTRACT_ADDRESS em src/vote.tsx com o endereço do deploy.
 
