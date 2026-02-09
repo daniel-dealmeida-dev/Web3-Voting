@@ -1,0 +1,164 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_optionOne",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_optionTwo",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_votingDuration",
+				"type": "uint256"
+			}
+		],
+		"name": "addVoting",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "choice",
+				"type": "uint256"
+			}
+		],
+		"name": "addvote",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "currentVotingIndex",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getCurrentVoting",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "optionOne",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votesOptionOne",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "optionTwo",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votesOptionTwo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Voting",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "votes",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "choice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "date",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "votings",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "optionOne",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "votesOptionOne",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "optionTwo",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "votesOptionTwo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "deadline",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
