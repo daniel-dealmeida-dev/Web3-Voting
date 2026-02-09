@@ -98,10 +98,13 @@ MetaMask instalada
 1 Clonar o repositório
 git clone https://github.com/seuusuario/web3-voting.git
 cd web3-voting
+
 2 Instalar dependências do frontend
 npm install
+
 3 Rodar o frontend
 npm run dev
+
 4 Deploy do contrato Solidity
 Abra contracts/Web.sol no Remix.
 
