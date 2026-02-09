@@ -95,14 +95,14 @@ Node.js (>=18)
 
 MetaMask instalada
 
-1️⃣ Clonar o repositório
+1 Clonar o repositório
 git clone https://github.com/seuusuario/web3-voting.git
 cd web3-voting
-2️⃣ Instalar dependências do frontend
+2 Instalar dependências do frontend
 npm install
-3️⃣ Rodar o frontend
+3 Rodar o frontend
 npm run dev
-4️⃣ Deploy do contrato Solidity
+4 Deploy do contrato Solidity
 Abra contracts/Web.sol no Remix.
 
 Compile com Solidity 0.8.21.
